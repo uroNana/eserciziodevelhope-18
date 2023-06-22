@@ -8,14 +8,32 @@
 
 
 class Employee {
-    public String name;
-    public String surname;
+    public String getSurname() {
+        return surname;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    private String name;
+    private String surname;
     private String address;
 
     public Employee(String newEmployeeName, String newEmployeeSurname, String newEmployeeAddress) {
-        name = newEmployeeName;
-        surname = newEmployeeSurname;
-        address = newEmployeeAddress;
+        this.name = newEmployeeName;
+        this.surname = newEmployeeSurname;
+        this.address = newEmployeeAddress;
     }
 
     public String getEmployeeDetails() {

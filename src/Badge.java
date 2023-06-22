@@ -25,7 +25,7 @@ public class Badge {
     private String generateBadgeIdCode() {
         String randomString1 = generateRandomString(3);
         String randomString2 = generateRandomString(3);
-        return randomString1 + employee.name + employee.surname + randomString2;
+        return randomString1 + employee.getName() + employee.getSurname() + randomString2;
 
     }
 
